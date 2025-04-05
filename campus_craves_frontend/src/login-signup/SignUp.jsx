@@ -9,7 +9,7 @@ import "./Forms.css";
 const SignUp = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
+  const baseURL = import.meta.env.BACKEND_BASE_URL;
 
   const [error, setError] = useState("");
   const [data, setData] = useState({
