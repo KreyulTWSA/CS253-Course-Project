@@ -10,7 +10,7 @@ const ResetPassword = () => {
   const dispatch = useDispatch();
   const location = useLocation();
   const navigate = useNavigate();
-  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
+  const baseURL = import.meta.env.BACKEND_BASE_URL;
 
   const [email] = useState(location.state?.email || "");
   const [otp, setOTP] = useState("");
