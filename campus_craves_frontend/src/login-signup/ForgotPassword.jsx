@@ -12,7 +12,7 @@ const ForgotPassword = () => {
   const [error, setError] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
   const navigate = useNavigate();
-  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
+  const baseURL = import.meta.env.BACKEND_BASE_URL;
 
   const handleChange = (e) => {
     setEmail(e.target.value);
