@@ -7,7 +7,7 @@ const OrdersView = () => {
   const [visibleOrders, setVisibleOrders] = useState(10);
   const accessToken = localStorage.getItem("access_token");
 
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
   useEffect(() => {
     fetchSellerOrders();

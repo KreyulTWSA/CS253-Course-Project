@@ -7,7 +7,7 @@ const FoodGrid = () => {
   const [visibleItems, setVisibleItems] = useState(10); 
   const [columns, setColumns] = useState(5); 
   const navigate = useNavigate(); 
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
   useEffect(() => {
     fetch(`${baseURL}/stores/`) 
