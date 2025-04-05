@@ -10,7 +10,7 @@ const CategoriesView = () => {
   const [products, setProducts] = useState([]);
   const [openCategory, setOpenCategory] = useState(null);
 
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
   const navigate = useNavigate();
   const { sellerId } = useParams();
