@@ -11,7 +11,7 @@ const Login = () => {
   const [data, setData] = useState({email:"", password:""})
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
   const forgotPasswordRedirect = () => {
     navigate("/forgot-password");
