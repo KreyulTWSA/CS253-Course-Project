@@ -7,7 +7,7 @@ const SellerProfileWithStores = () => {
   const user = useSelector((state) => state.user.user);
   const { sellerId } = useParams();
 
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
   const [fetchTrigger, setFetchTrigger] = useState(0);
 

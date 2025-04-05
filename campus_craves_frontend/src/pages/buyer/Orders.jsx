@@ -9,7 +9,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
   const accessToken = localStorage.getItem("access_token");
 
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
   useEffect(() => {
     fetchOrders();

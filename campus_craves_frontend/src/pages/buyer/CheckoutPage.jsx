@@ -11,7 +11,7 @@ const Checkout = () => {
   const { storeId } = useParams();
   const navigate = useNavigate();
 
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
   
   const [paymentMethod, setPaymentMethod] = useState("razorpay");
   const [message, setMessage] = useState("");

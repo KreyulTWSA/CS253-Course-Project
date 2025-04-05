@@ -9,7 +9,7 @@ const BuyerProfile = () => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const baseURL = import.meta.env.BACKEND_BASE_URL;
+    const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
     useEffect(() => {
         fetch(`${baseURL}/users/profile/`, {

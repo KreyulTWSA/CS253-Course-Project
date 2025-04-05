@@ -6,7 +6,7 @@ const ProductsView = () => {
   const { categoryId } = useParams();
   const categoryIdNum = Number(categoryId); 
 
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
   const [products, setProducts] = useState([]);
   const [newProduct, setNewProduct] = useState({

@@ -19,7 +19,7 @@ const Menu = () => {
   const [sellerData, setSellerData] = useState({});
   const [userDetails, setUserDetails] = useState({})
   const [checkoutMessage, setCheckoutMessage] = useState("")
-  const baseURL = import.meta.env.BACKEND_BASE_URL;
+  const baseURL = import.meta.env.VITE_BACKEND_BASE_URL;
 
   const fetchProducts = async (categoryId) => {
     try {
